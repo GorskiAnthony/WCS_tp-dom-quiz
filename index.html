@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quiz JS</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+		<!-- 
+            1. Récupérer les données à l'événement 'Click'
+            2. Comparer les résultats
+            3. Afficher une phrase en fonction du résultat
+            4. Changer la couleur des blocs et créer des animations
+        -->
+		<h1>JavaScript Quiz</h1>
+		<main>
+			<form class="form-quiz">
+				<div class="block">
+					<h4>
+						Un commentaire sur une ligne en JavaScript commence par
+						_.
+					</h4>
+					<div class="question">
+						<div>
+							<input
+								type="radio"
+								name="q1"
+								id="r1"
+								value="a"
+								checked
+							/>
+							<label for="r1">//</label>
+						</div>
+						<div>
+							<input type="radio" name="q1" id="r2" value="b" />
+							<label for="r2">#</label>
+						</div>
+						<div>
+							<input type="radio" name="q1" id="r3" value="c" />
+							<label for="r3">--</label>
+						</div>
+						<div>
+							<input type="radio" name="q1" id="r4" value="d" />
+							<label for="r4">%</label>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<h4>JavaScript est une technologie _.</h4>
+					<div class="question">
+						<div>
+							<input
+								type="radio"
+								name="q2"
+								id="r5"
+								value="a"
+								checked
+							/>
+							<label for="r5">de balisage </label>
+						</div>
+						<div>
+							<input type="radio" name="q2" id="r6" value="b" />
+							<label for="r6">côté client</label>
+						</div>
+						<div>
+							<input type="radio" name="q2" id="r7" value="c" />
+							<label for="r7">compilé</label>
+						</div>
+						<div>
+							<input type="radio" name="q2" id="r8" value="d" />
+							<label for="r8">machine</label>
+						</div>
+					</div>
+				</div>
+
+				<button type="submit">Validez vos choix !</button>
+			</form>
+
+			<div class="resultats">
+				<h2>Cliquez sur valider pour voir les résultats</h2>
+				<p class="aide"></p>
+				<p class="note"></p>
+			</div>
+		</main>
+		<script src="app_old.js"></script>
+	</body>
+</html>
